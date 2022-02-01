@@ -1,21 +1,17 @@
 #평범한 배낭
-things = []
+
+weight = []
+price = []
 n, k = map(int, input().split())
-dp = [0]*n
+dp = [[0]*(k+1) for _ in range(n+1)]
 for _ in range(n):
     w, v = map(int, input().split())
-    things.append([w, v])
-
-print(things)
-
-# dp[0] = things[0][1]
-# temp = things[0][0]
-for i in range(n):
-    temp = things[i][0]
-    for j in range(i+1, n):
-        if temp+things[j][0] < k:
-            temp += things[j][0]
-            dp[i] = dp[i-1] + things[j][1]
+    weight.append(w)
+    price.append(v)
+for i in range(1, n+1):
+    for j in range(1, k+1):
+        if j < weight[i-1]:
+            dp[i][j] = dp[i-1][j]
         else:
-            dp[i] = max(dp[i], things[j][1])
-print(dp)
+            dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i-1]] + price[i-1])
+print(dp[n][k])
