@@ -1,4 +1,4 @@
-#저울***
+#저울*
 n = int(input())
 weight = list(map(int, input().split()))
 weight.sort()
