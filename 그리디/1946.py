@@ -1,4 +1,4 @@
-#신입사원
+#신입사원*
 import sys
 input = sys.stdin.readline
 
