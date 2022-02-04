@@ -1,9 +1,9 @@
 #저울***
-N = int(input())
-listW = list(map(int, input().split()))
-listW.sort()
+n = int(input())
+weight = list(map(int, input().split()))
+weight.sort()
 result = 1
-for w in listW:
+for w in weight:
     if result >= w:
         result += w
     else:
