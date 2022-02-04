@@ -1,4 +1,4 @@
-#설탕 배달
+#설탕 배달*
 n = int(input())
 result = 0
 while n >= 0:
