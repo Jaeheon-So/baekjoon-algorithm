@@ -1,4 +1,4 @@
-#보석 도둑*****
+#보석 도둑***
 import heapq
 import sys
 input = sys.stdin.readline
