@@ -1,26 +1,26 @@
 #번데기
-A = int(input())
-T = int(input())
-say = int(input())
+a = int(input())
+t = int(input())
+sign = int(input())
+progress = []
 cnt = 0
 turn = 0
-end = 0
-bbundegi = []
-while cnt != T:
+participant = 0
+while cnt != t:
     turn += 1
     for _ in range(2):
-        bbundegi.append(0)
-        bbundegi.append(1)
-    for _ in range(turn + 1):
-        bbundegi.append(0)
-    for _ in range(turn + 1):
-        bbundegi.append(1)
-    if len(bbundegi) // 2 >= T:
-        for i in bbundegi:
-            end += 1
-            if i == say:
-                cnt += 1
-            if cnt == T:
-                break
+        progress.append(0)
+        progress.append(1)
+    for _ in range(turn+1):
+        progress.append(0)
+    for _ in range(turn+1):
+        progress.append(1)
 
-print((end-1) % A)
+    if len(progress) // 2 >= t:
+        for i in progress:
+            if i == sign:
+                cnt += 1
+            if cnt == t:
+                break
+            participant += 1
+print(participant % a)
