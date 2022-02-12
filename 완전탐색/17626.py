@@ -1,4 +1,4 @@
-#Four Squares***
+#Four Squares
 def sol(n):
     if int(n**0.5) == n**0.5:
         return 1
@@ -15,3 +15,17 @@ def sol(n):
 
 n = int(input())
 print(sol(n))
+
+# dp(동적계획법) 풀이
+# n = int(input())
+# dp = [0]*(n+1)
+# dp[1] = 1
+
+# for i in range(2, n+1):
+#     minValue = 5
+#     j = 1
+#     while (j**2) <= i:
+#         minValue = min(minValue, dp[i - (j**2)])
+#         j += 1
+#     dp[i] = minValue + 1
+# print(dp[n])
