@@ -1,4 +1,4 @@
-# 벽 부수고 이동하기***
+# 벽 부수고 이동하기
 from collections import deque
 def bfs(x, y, break_cnt):
     queue = deque()
