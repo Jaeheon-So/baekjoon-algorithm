@@ -34,4 +34,3 @@ for _ in range(k):
                 break
     else:
         print("YES")
-  
