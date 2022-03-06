@@ -1,5 +1,4 @@
 #평범한 배낭
-
 weight = []
 price = []
 n, k = map(int, input().split())
