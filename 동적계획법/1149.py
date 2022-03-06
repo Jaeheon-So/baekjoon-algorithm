@@ -1,7 +1,6 @@
 #RGB거리
 cost = []
 n = int(input())
-#dp = [[0]*3 for _ in range(n)]
 for _ in range(n):
   r, g, b = map(int,input().split())
   cost.append([r, g, b])
