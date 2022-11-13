@@ -1,4 +1,4 @@
-// 하노이 탑 이동 순서
+// 하노이 탑 이동 순서 ***
 let input = require("fs").readFileSync("/dev/stdin").toString().trim();
 let n = Number(input);
 
