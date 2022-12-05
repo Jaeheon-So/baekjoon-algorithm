@@ -1,17 +1,9 @@
 // 단지번호붙이기
-// let input = require("fs")
-//   .readFileSync("/dev/stdin")
-//   .toString()
-//   .trim()
-//   .split("\n");
-let input = `7
-0110100
-0110101
-1110101
-0000111
-0100000
-0111110
-0111000`.split("\n");
+let input = require("fs")
+  .readFileSync("/dev/stdin")
+  .toString()
+  .trim()
+  .split("\n");
 
 let n = Number(input[0]);
 let graph = [];
